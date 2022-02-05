@@ -1,0 +1,31 @@
+h1 {
+    color:darkgreen;   
+}
+p,h2,h3,li {
+    color:black;
+    font-family: karla; 
+}
+.font-karla {
+    font-family: 'Karla', sans-serif;
+}
+.center {
+    text-align: center;
+}
+
+#list-align {
+    display: inline-block; 
+    text-align: left
+}
+.footer {
+    text-align:right;
+    color: darkgreen;  
+}
+.left-margin {
+    margin-left: 40px;
+}
+.right-margin {
+    margin-right: 40px;
+}
+.top-margin {
+    margin-top: 40px;
+}
