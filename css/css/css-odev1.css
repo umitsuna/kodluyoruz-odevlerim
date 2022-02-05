@@ -1,17 +1,14 @@
-h1 {
-    color:darkgreen;   
+h1,h3 {
+    color:darkgreen; 
+    font-family: 'Karla', sans-serif;  
 }
-p,h2,h3,li {
+p,h2,li,a {
     color:black;
-    font-family: karla; 
-}
-.font-karla {
     font-family: 'Karla', sans-serif;
 }
 .center {
     text-align: center;
 }
-
 #list-align {
     display: inline-block; 
     text-align: left
