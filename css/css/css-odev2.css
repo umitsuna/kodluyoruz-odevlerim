@@ -1,0 +1,59 @@
+/*burada önce margin:auto denedim fakat image content için çalışmıyor. display: block tam olarak istediğim gibi oldu*/
+img { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+/* 98 version Google kaynak kodunda search bar için width:90%. Benzer şekilde search bar width attribute baz alarak diğer box'ları buna uydurdum */
+.search-bar {
+    background-color: rgb(238, 238, 238);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+ /* tüm ölçüleri px yada % biçiminde versem bile yine search bar genişliğini tutturamıyorum. en iyi çözümü hem px hem de % kullanarak yaptım */
+ /* bu 3 box için vertical alignment ayarlayamadım. w3school ve stackoverflow'da önerilen vertical-align: middle value burada çalıştıramadım*/
+ /* renk kodları 98 version Google kaynak kodlarından */
+}
+.left-box {
+    background-color: rgb(126, 229, 218);
+    width: 33%;
+    margin-left: 5%;
+    margin-right: 2px; 
+}    
+
+.middle-box {
+    background-color: rgb(112, 204, 194);
+    width: 18%;  
+    font-size: small;
+}
+ 
+.right-box {
+    background-color: rgb(98, 179, 170);
+    width:38.7% ;
+    margin-left: 2px;
+    margin-right: 5%;
+    font-size: small;
+}
+ /* yukarıdaki 3 box için ortak özellikler aşağıdaki class'ta. tekrara düştüğümü farkedince hepsini tek bir classta topladım */
+.box {
+    height: 80px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    margin-top: 2px;
+}
+/* footer içindeki p kocaman bir block element, eğer margin kullanmazsam tepe kısmı search bar altından başlıyor. bunu anlamadım */
+.footer {
+    margin-top: 100px;
+    text-align: center;
+    font-size: small;
+}
+/* 98 version Google'da metin içerikler p elementi içinde değil de doğrudan editore yazılıp bırakılmış. p elementi içinde kullandığımda yine kocaman bir block element ile karşılaştım. benzer görünümü elde etmek için yine margin değeri vererek yaptım */
+p {
+    
+    margin-bottom: -18px;
+    margin-top: -1px;
+}
